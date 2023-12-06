@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/* Global Style Properties */
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px;
+    background-color: #081120;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: black;
+}
+
+ul {
+    padding-left: 16px;
+    margin: 0px;
+}
+
+.g-container {
+    margin: auto;
+    width: 70%;
+}
+
+.g-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.g-header h1 {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 1.7rem;
+    margin: 0px;
+
+    padding-top:25px;
+    padding-bottom: 15px;
+}
+
+.g-footer-bg {
+    margin-top: 70px;
+    background-color: #2e4051;
+}
+
+.g-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+
+    color: black;
+    font-weight: bold;
+}
+
+.g-footer .socials {
+    display: flex;
+    gap: 20px;
+
+    padding-bottom: 20px;
+}
+
+.g-footer .socials i {
+    transition: color 0.3s ease;
+}
+
+.g-footer .socials i:hover {
+    color: #3e63d0;
+}
+
+.g-footer .copyright {
+    text-align: center;
+}
+
+.g-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.g-title h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.g-title h2 span {
+    background: linear-gradient(to right, #52b6df, #3e63d0);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.g-title .description {
+    color: lightgray;
+    margin: 0px;
+    text-align: left;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.g-title .buttons {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.g-title .buttons a {
+    background-color: #2e4051;
+    color: white;
+    border: 1px solid #2e4051;
+    border-radius: 100px;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+
+    &:nth-of-type(2) {
+        background-color: transparent;
+    }
+}
+
+.g-title .buttons i {
+    margin-right: 10px;
+    color: white;
+}
+
+.g-title .buttons a:hover {
+    background-color: #3e63d0;
+}
+
+.g-samples {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.g-sample {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.g-sample .sample-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    flex-grow: 1;
+    width: 40%;
+    min-width: 330px;
+}
+
+.g-sample .sample-name {
+    font-size: 1.6rem;
+    margin: 0px;
+
+    border-bottom: 2px solid #3e63d0;
+    padding-bottom: 10px;
+}
+
+.g-sample .sample-tech {
+    display: flex;
+    gap: 10px;
+}
+
+.g-sample .sample-tech div {
+    padding: 10px;
+    background-color: #2e4051;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #3e63d0;
+    }
+}
+
+.g-sample img {
+    border-radius: 10px;
+    border: 2px solid transparent;
+    width: 100%;
+
+    transition: border 0.3s ease;
+}
+
+.g-sample img:hover {
+    border: 2px solid white;
+}
+
+.g-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.g-navbar a {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Navbar Hover Animation */
+.g-navbar a {
+    position: relative;
+}
+
+.g-navbar a::before,
+.g-navbar a::after {
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 3px;
+    background-color: #52b6df; 
+    
+    bottom: -6px;
+    transition: width 0.3s ease;
+}
+
+.g-navbar a::before {
+    left: 50%;
+    transform-origin: right;
+}
+
+.g-navbar a::after {
+    right: 50%;
+    transform-origin: left;
+}
+
+.g-navbar a:hover::before,
+.g-navbar a:hover::after {
+    width: 50%;
+}
+
+.g-navbar a.active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #52b6df; 
+    bottom: -6px;
+    left: 0;
+}
+
+/* Page and Section Styles */
+
+#p-home #s-featured {
+    font-size: 1.2rem;
+}
+
+#p-home #s-featured .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#p-home #s-featured .card {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    width: 25%;
+    min-width: 230px;
+    background-color: #2e4051  ;
+    color: black;
+
+    border: 2px solid transparent;
+    border-radius: 20px;
+
+    transition: border 0.3s ease;
+
+    &:hover {
+        border: 2px solid white;
+    }
+}
+
+#p-home #s-featured .card > div {
+    height: 50%;
+    padding: 20px;
+
+    &:nth-of-type(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &:nth-of-type(2) {
+        background-color: gray;
+        border-radius: 0px 0px 18px 18px;
+    }
+}
+
+#p-home #s-featured .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#p-resume #s-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+
+    background-image: url(../images/banner-resume.jpg);
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+#p-resume #s-banner h2 {
+    margin: 0px;
+}
+
+#p-resume #s-banner .description {
+    color: #081120;
+    font-size: 1.5rem;
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+}
+
+#p-resume #s-experience, #s-education, #s-bottom {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    width: 70%;
+}
+
+#p-resume #s-experience img {
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+    align-self: center;
+    border: 8px solid #081120;
+    border-radius: 100px;
+}
+
+#p-resume #s-experience h2,
+#p-resume #s-education h2,
+#p-resume #s-skills h2,
+#p-resume #s-awards h2,
+#p-resume #s-qualities h2 {
+    font-family: system-ui, sans-serif;
+    margin-top: 35px;
+    margin-bottom: 25px;
+
+    border-bottom: 2px solid #3e63d0;
+    padding-bottom: 10px;
+}
+
+#p-resume .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 30px;
+}
+
+.cards-container-b {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 0px;
+}
+
+#p-resume .card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 25%;
+    min-width: 230px;
+}
+
+#p-resume .card .card-name {
+    font-weight: bold;
+}
+
+#p-resume .card .card-duration {
+    font-family: system-ui, sans-serif;
+    font-size: 0.8rem;
+    color: gray;
+
+    padding-bottom: 10px;
+}
+
+#p-resume .card .card-description {
+    font-size: 0.9rem;
+}
+
+#p-resume #s-bottom {
+    flex-direction: row;
+}
+
+#p-resume #s-bottom ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#p-web-samples .g-title h2,
+#p-other-samples .g-title h2 {
+    border-bottom: 5px solid #3e63d0;
+    padding-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    body .g-container {
+        margin: auto;
+        width: 85%;
+    }
+
+    .g-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .g-title {
+        margin-top: 20px;
+    }
+
+    .g-navbar {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+
+    #p-resume #s-experience, #s-education, #s-bottom {
+        margin: auto;
+        width: 85%;
+    }
+}
+
+@media (max-width: 450px) {
+    .g-title .buttons a {
+        padding: 15px 20px;
+        font-size: 0.8rem;
+    }
+}
