@@ -1,0 +1,60 @@
+#p-home #s-featured > h2 {
+    display: inline-block;
+
+    color: lightgray;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+}
+
+#p-home #s-featured .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#p-home #s-featured .card {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    width: 20%;
+    min-width: 230px;
+    background-color: #1c1d20  ;
+    color: #A1A1AA;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+
+    transition: border 0.3s ease;
+
+    overflow: hidden;
+    object-fit: cover;
+
+    &:hover {
+        border: 1px solid white;
+    }
+}
+
+#p-home #s-featured .card-text {
+    padding: 20px;
+}
+
+#p-home #s-featured .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#p-home #s-featured .card-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}

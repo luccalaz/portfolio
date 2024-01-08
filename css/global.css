@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+/* Global Style Properties */
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px;
+    background-color: #081120;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.g-footer i {
+    color: black;
+}
+
+.g-container {
+    margin: auto;
+    width: 70%;
+}
+
+.g-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.g-header h1 {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 1.7rem;
+    margin: 0px;
+
+    padding-top:25px;
+    padding-bottom: 15px;
+}
+
+.g-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.g-navbar a {
+    font-size: 0.9rem;
+    color: white;
+    position: relative;
+}
+
+.g-navbar a::before,
+.g-navbar a::after {
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 3px;
+    background-color: #52b6df; 
+    
+    bottom: -6px;
+    transition: width 0.3s ease;
+}
+
+.g-navbar a::before {
+    left: 50%;
+    transform-origin: right;
+}
+
+.g-navbar a::after {
+    right: 50%;
+    transform-origin: left;
+}
+
+.g-navbar a:hover::before,
+.g-navbar a:hover::after {
+    width: 50%;
+}
+
+.g-navbar a.active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #52b6df; 
+    bottom: -6px;
+    left: 0;
+}
+
+.g-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.g-title h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.g-title h2 span {
+    background: linear-gradient(to right, #52b6df, #3e63d0);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.g-title .description {
+    color: lightgray;
+    margin: 0px;
+    text-align: left;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.g-title .buttons {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.g-title .buttons a {
+    background-color: #2e4051;
+    color: white;
+    border: 1px solid #2e4051;
+    border-radius: 100px;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+
+    &:nth-of-type(2) {
+        background-color: transparent;
+    }
+}
+
+.g-title .buttons i {
+    margin-right: 10px;
+    color: white;
+}
+
+.g-title .buttons a:hover {
+    background-color: #3e63d0;
+}
+
+.g-footer-bg {
+    margin-top: 70px;
+    background-color: #213141;
+}
+
+.g-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+
+    color: black;
+    font-weight: bold;
+}
+
+.g-footer .socials {
+    display: flex;
+    gap: 20px;
+
+    padding-bottom: 20px;
+}
+
+.g-footer .socials i {
+    transition: color 0.3s ease;
+}
+
+.g-footer .socials i:hover {
+    color: #3e63d0;
+}
+
+.g-footer .copyright {
+    text-align: center;
+}
+
+.g-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.g-empty > i {
+    color: rgb(82, 67, 165);
+}
+
+.g-empty > h2, .g-empty >  p {
+    font-family: 'Courier New', Courier, monospace;
+    color: lightgray;
+    margin: 0px;
+}
+
+/* Media Queries */
+@media (max-width: 1100px) {
+    body .g-container {
+        margin: auto;
+        width: 85%;
+    }
+
+    .g-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .g-title {
+        margin-top: 20px;
+    }
+
+    .g-navbar {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 450px) {
+    .g-title .buttons a {
+        padding: 15px 20px;
+        font-size: 0.8rem;
+    }
+}
