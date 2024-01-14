@@ -106,7 +106,7 @@ a {
     margin: auto;
     width: 75%;
     margin-top: 30px;
-    column-gap: 75px;
+    column-gap: 29px;
     row-gap: 40px;
     color: lightgray;
     letter-spacing: 0.5px;
@@ -119,6 +119,31 @@ a {
 
 #p-resume #s-content li {
     margin-bottom: 6px;
+}
+
+#p-resume #s-skills .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#p-resume #s-skills .skill-tags div {
+    padding: 10px;
+    background-color: #3d3f46;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #9f6efc;
+    }
+}
+
+#p-resume .res-card {
+    padding: 20px;
+    padding-top: 12px;
+    background-color: #1c1d20;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
 }
 
 #p-resume #s-main,
