@@ -13,7 +13,6 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 .g-footer i {
@@ -252,6 +251,10 @@ a {
         justify-content: space-between;
         align-items: center;
         padding: 15px;
+
+        a {
+            color: white;
+        }
     }
     
     .g-mobile-navbar #links {
@@ -261,15 +264,14 @@ a {
         transition: max-height 0.3s ease;
         max-height: 0;
         overflow: hidden;
-    }
-    
-    .g-mobile-navbar #links a {
-        color: lightgray;
-        padding: 15px 0;
+
+        a {
+            color: lightgray;
+            padding: 15px 0;
+        }
     }
     
     .g-mobile-navbar #links.show {
         max-height: 200px;
     }
-    
 }
