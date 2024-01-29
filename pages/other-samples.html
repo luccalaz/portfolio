@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/samples.css">
         <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
         <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+        <script src="../js/navbar.js"></script>
         <title>Web App Samples</title>
     </head>
     <body id="p-other-samples">
@@ -15,11 +16,22 @@
             <h1>Lucca Lazzarini Silva</h1>
             <nav class="g-navbar">
                 <a href="../index.html">Home</a>
-                <a href="resume.html">Resume</a>
-                <a href="web-samples.html">Web Samples</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./web-samples.html">Web Samples</a>
                 <a class="active" href="#">Other Samples</a>
             </nav>
         </header>
+        <nav class="g-mobile-navbar">
+            <div class="m-active">
+                <a href="#">Other Samples</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars fa-lg"></i></a>
+            </div>
+            <div id="links">
+                <a href="../index.html">Home</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./web-samples.html">Web Samples</a>
+            </div>
+        </nav>
         <main class="g-container">
             <section class="g-title">
                 <h2>Other Samples</h2>

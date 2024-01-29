@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../lib/fontawesome-free-5.15.4-web/css/all.css">
         <link rel="stylesheet" href="../css/global.css">
         <link rel="stylesheet" href="../css/samples.css">
+        <script src="../js/navbar.js"></script>
         <title>Web App Samples</title>
     </head>
     <body id="p-web-samples">
@@ -13,11 +14,22 @@
             <h1>Lucca Lazzarini Silva</h1>
             <nav class="g-navbar">
                 <a href="../index.html">Home</a>
-                <a href="resume.html">Resume</a>
+                <a href="./resume.html">Resume</a>
                 <a class="active" href="#">Web Samples</a>
-                <a href="other-samples.html">Other Samples</a>
+                <a href="./other-samples.html">Other Samples</a>
             </nav>
         </header>
+        <nav class="g-mobile-navbar">
+            <div class="m-active">
+                <a href="#">Web Samples</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars fa-lg"></i></a>
+            </div>
+            <div id="links">
+                <a href="../index.html">Home</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./other-samples.html">Other Samples</a>
+            </div>
+        </nav>
         <main class="g-container">
             <section class="g-title">
                 <h2>Web Samples</h2>

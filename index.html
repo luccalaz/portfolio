@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./lib/fontawesome-free-5.15.4-web/css/all.css">
         <link rel="stylesheet" href="./css/global.css">
         <link rel="stylesheet" href="./css/home.css">
+        <script src="./js/navbar.js"></script>
         <title>Home</title>
     </head>
     <body id="p-home">
@@ -18,6 +19,17 @@
                 <a href="./pages/other-samples.html">Other Samples</a>
             </nav>
         </header>
+        <nav class="g-mobile-navbar">
+            <div class="m-active">
+                <a href="#">Home</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars fa-lg"></i></a>
+            </div>
+            <div id="links">
+                <a href="./pages/resume.html">Resume</a>
+                <a href="./pages/web-samples.html">Web Samples</a>
+                <a href="./pages/other-samples.html">Other Samples</a>
+            </div>
+        </nav>        
         <main class="g-container">
             <section class="g-title">
                 <h2>Hello,<br> my name is <span>Lucca</span></h2>

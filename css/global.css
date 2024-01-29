@@ -13,6 +13,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .g-footer i {
@@ -45,6 +46,10 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+}
+
+.g-mobile-navbar {
+    display: none;
 }
 
 .g-navbar a {
@@ -231,4 +236,40 @@ a {
         padding: 15px 20px;
         font-size: 0.8rem;
     }
+
+    .g-navbar {
+        display: none;
+    }
+
+    .g-mobile-navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: #213141;
+    }
+    
+    .g-mobile-navbar .m-active {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .g-mobile-navbar #links {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px; 
+        transition: max-height 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+    }
+    
+    .g-mobile-navbar #links a {
+        color: lightgray;
+        padding: 15px 0;
+    }
+    
+    .g-mobile-navbar #links.show {
+        max-height: 200px;
+    }
+    
 }
