@@ -31,9 +31,11 @@ a {
     align-items: center;
 }
 
-.g-header h1 {
+.g-header .g-site-title {
     font-family: 'Sacramento', sans-serif;
     font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
     margin: 0px;
 
     padding-top:25px;
