@@ -58,3 +58,9 @@
     font-size: 0.9rem;
     line-height: 1.5rem;
 }
+
+@media (max-width: 450px) {
+    #p-home .g-mobile-navbar {
+        margin-bottom: 10px;
+    }
+}

@@ -40,6 +40,7 @@
 
 .g-sample .sample-tech {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -66,8 +67,8 @@
     box-shadow: 0 0 8px #9ecaed;
 }
 
-#p-web-samples .g-title h2,
-#p-other-samples .g-title h2 {
-    border-bottom: 5px solid #3e63d0;
-    padding-bottom: 10px;
+#p-projects .g-title h2 {
+    font-size: 2rem;
+    border-bottom: 4px solid #3e63d0;
+    padding-bottom: 6px;
 }

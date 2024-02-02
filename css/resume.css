@@ -5,6 +5,10 @@ a {
     color: lightgray;
 }
 
+#p-resume main {
+    font-family: "Times New Roman", sans-serif;
+}
+
 /* Header Styles */
 #p-resume #s-header {
     display: flex;
@@ -39,11 +43,8 @@ a {
 }
 
 #p-resume #s-header .content .name {
-    font-family: "Rubik Glitch", sans-serif;
-    font-size: 2.8rem;
-    font-weight: 100;
-    letter-spacing: 5px;
-    word-spacing: 7px;
+    font-size: 3rem;
+    font-weight: bolder;
     color: #9f6efc;
     padding-bottom: 4px;
     border-bottom: 4px solid;
@@ -104,7 +105,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    width: 75%;
+    width: 80%;
     margin-top: 30px;
     column-gap: 29px;
     row-gap: 40px;
@@ -170,7 +171,7 @@ a {
 }
 
 #p-resume .heading {
-    font-family: 'Segoe UI', sans-serif;
+    /* font-family: 'Segoe UI', sans-serif; */
     font-weight: bold;
     font-size: 1.6rem;
     border-bottom: 3px solid;
@@ -222,4 +223,5 @@ a {
     #p-resume #s-header .content ul {
         justify-content: center;
     }
+
 }
