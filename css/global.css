@@ -276,4 +276,8 @@ a {
     .g-mobile-navbar #links.show {
         max-height: 200px;
     }
+
+    #p-home .g-title, #p-projects .g-title {
+        margin-top: 60px;
+    }
 }
