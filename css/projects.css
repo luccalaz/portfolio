@@ -67,7 +67,24 @@
     box-shadow: 0 0 8px #9ecaed;
 }
 
-#p-projects .g-title h2 {
+#p-projects #s-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+#p-projects #s-title .description {
+    color: lightgray;
+    margin: 0px;
+    text-align: left;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+#p-projects #s-title h2 {
+    width: fit-content;
     font-size: 2rem;
     border-bottom: 4px solid #3e63d0;
     padding-bottom: 6px;
