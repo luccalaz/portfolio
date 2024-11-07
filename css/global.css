@@ -15,6 +15,14 @@ a {
     text-decoration: none;
 }
 
+.announcement {
+    background-color: #3e63d0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+
 .g-footer i {
     color: black;
 }
